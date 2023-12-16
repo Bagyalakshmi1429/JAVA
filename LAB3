@@ -255,9 +255,9 @@ class Employee {
 
         // Creating objects of each employee type
 
-        HourlyEmployee hourlyEmployee = new HourlyEmployee(101, "BadriNarayanan S", "Developer", 15.5, 40);
-        SalariedEmployee salariedEmployee = new SalariedEmployee(102, "Gaikwad M", "Manager", 5000);
-        ExecutiveEmployee executiveEmployee = new ExecutiveEmployee(103, "George L", "Executive", 10000, 15);
+        HourlyEmployee hourlyEmployee = new HourlyEmployee(101, "Aarnav S", "Developer", 15.5, 40);
+        SalariedEmployee salariedEmployee = new SalariedEmployee(102, "Ruthu", "Manager", 5000);
+        ExecutiveEmployee executiveEmployee = new ExecutiveEmployee(103, "manual ", "Executive", 10000, 15);
 
         // Displaying detailed information for each employee
 
