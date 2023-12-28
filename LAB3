@@ -250,7 +250,10 @@ class Employee {
     // Now need to create objects for each and every class to showcase the functionalities
 
 
-    class EmployeePayrollTest {
+   
+// EmployeePayrollTest.java
+
+public class EmployeePayrollTest {
     public static void main(String[] args) {
 
         // Creating objects of each employee type
@@ -297,5 +300,6 @@ class Employee {
         System.out.println("\nTotal Payroll: $" + totalPayroll);
     }
 }
+
 
     
