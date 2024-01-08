@@ -1,5 +1,3 @@
-// Q1
-
 import java.util.Scanner;
 
 class CoinChangeThread extends Thread {
@@ -48,7 +46,7 @@ public class CoinChangeMultiThreading {
             coins[i] = scanner.nextInt();
         }
 
-        System.out.print("Enter the target sum: "); 
+        System.out.print("Enter the target sum: ");
         int sum = scanner.nextInt();
 
         int threadCount = Runtime.getRuntime().availableProcessors();
@@ -75,3 +73,4 @@ public class CoinChangeMultiThreading {
 
         System.out.println("Number of ways to make the sum using given coins: " + totalWays);
     }
+}
