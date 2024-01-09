@@ -1,0 +1,80 @@
+import java.util.*;
+
+// Customer class
+class Customer {
+    private String customerId;
+    private String name;
+    // other customer details and methods
+
+    public Customer(String customerId, String name) {
+        this.customerId = customerId;
+        this.name = name;
+    }
+    // getters, setters, and other methods related to customer details
+}
+
+// Product class
+class Product {
+    private String productId;
+    private String name;
+    // other product details and methods
+
+    public Product(String productId, String name) {
+        this.productId = productId;
+        this.name = name;
+    }
+    // getters, setters, and other methods related to product details
+}
+
+// Order class
+class Order {
+    private String orderId;
+    private Customer customer;
+    private List<Product> products;
+    // other order details and methods
+
+    public Order(String orderId, Customer customer, List<Product> products) {
+        this.orderId = orderId;
+        this.customer = customer;
+        this.products = products;
+    }
+    // getters, setters, and other methods related to order details
+}
+
+public class AmazonCRMSystem {
+    public static void main(String[] args) {
+        // ArrayList to manage dynamic lists of customers, products, and orders
+        List<Customer> customers = new ArrayList<>();
+        List<Product> products = new ArrayList<>();
+        List<Order> orders = new ArrayList<>();
+
+        // HashMap for unique identification and swift retrieval of products and customers
+        Map<String, Customer> customerMap = new HashMap<>();
+        Map<String, Product> productMap = new HashMap<>();
+
+        // HashSet to efficiently organize unique products associated with each customer
+        Map<Customer, Set<Product>> customerProducts = new HashMap<>();
+
+        // TreeSet for ordered sorting of customers or products
+        Set<Customer> sortedCustomers = new TreeSet<>();
+        Set<Product> sortedProducts = new TreeSet<>();
+
+        // Sample usage:
+        Customer customer1 = new Customer("C1", "John Doe");
+        customers.add(customer1);
+        customerMap.put("C1", customer1);
+
+        Product product1 = new Product("P1", "Sample Product");
+        products.add(product1);
+        productMap.put("P1", product1);
+
+        Set<Product> customer1Products = new HashSet<>();
+        customer1Products.add(product1);
+        customerProducts.put(customer1, customer1Products);
+
+        Order order1 = new Order("O1", customer1, new ArrayList<>(customer1Products));
+        orders.add(order1);
+
+        // More operations and methods can be added based on specific requirements
+    }
+}
