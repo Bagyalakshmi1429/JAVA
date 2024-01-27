@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+    <center><h1><u>Login</u></h1></center>
+    <center>
+    <div>
+        <table>
+            <tr>
+                <td>User name</td>
+                <td><input type="text" name="username" placeholder="User name"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </div>
+</center>
+    </body>
+</html>
